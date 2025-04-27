@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f8f8;
+  }
+  
+  .header {
+    background-image: url('https://images.pexels.com/photos/3408744/pexels-photo-3408744.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    position: relative;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .overlay {
+    padding: 20px;
+    width: 90%;
+    max-width: 800px;
+    border-radius: 10px;
+  }
+  
+  .header h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .search-bar {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    gap: 10px;
+  }
+  
+  .search-bar select, .search-bar input, .search-bar button {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+  }
+  
+  .search-bar input {
+    flex: 1;
+  }
+
+  .search-bar input
+  
+  .search-bar button {
+    cursor: pointer;
+  }
+  
+  .navbar {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    gap: 10px;
+    margin: 20px;
+    padding: 0 10px;
+  }
+  
+  .navbar button {
+    background: none;
+    border: 2px solid black;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    min-width: 100px; 
+    flex-grow: 1;
+    text-align: center;
+  }
+  
+  .navbar .active {
+    background-color: black;
+    color: white;
+  }
+  
+  .navbar button:hover {
+    background-color: black;
+    color: white;
+  }
+  
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 3%;
+    padding: 20px;
+  }
+  
+  .photo img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    object-fit: cover;
+    transition: transform 0.3s;
+  }
+  
+  .photo img:hover {
+    transform: scale(1.05);
+  }
+  
